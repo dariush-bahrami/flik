@@ -4,7 +4,7 @@ from fake_useragent import UserAgent
 
 
 def fetch_imdb_id(title):
-    query = "+".join(f"Movie {title.title()}".split()) + "%3Aimdb.com"
+    query = "+".join(title.split()) + "%3Aimdb.com"
     url = f"https://www.google.com/search?q={query}"
     ua = UserAgent()
     headers = {"User-Agent": ua.chrome}
