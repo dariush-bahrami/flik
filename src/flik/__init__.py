@@ -1,1 +1,1 @@
-from .reviewtools import review
+from .omdb import fetch_movie_info as fetchinfo
