@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
 
-def review(movie):
-    query = "+".join(f"Movie {movie.title()}".split())
+def review(title):
+    query = "+".join(title.split())
     url = f"https://www.google.com/search?q={query}"
     ua = UserAgent()
     headers = {"User-Agent": ua.chrome}
