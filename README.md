@@ -2,6 +2,11 @@
 
 Currently, flik heavily depends on [OMDb](https://www.omdbapi.com/) API. You should first [get](https://www.omdbapi.com/apikey.aspx) your API key. A free subscription is available for up to 1000 requests per day.
 
+Use pip to install flik:
+```
+pip install flik
+```
+
 To get full information of a title use `fetchinfo` function:
 
 ```python
